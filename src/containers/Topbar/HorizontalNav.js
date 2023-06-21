@@ -12,7 +12,7 @@ import {
 import { menuList } from "./data.menu.content";
 
 const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
+// const MenuItemGroup = Menu.ItemGroup;
 
 const HorizontalNav = () => {
 
@@ -41,29 +41,29 @@ const HorizontalNav = () => {
       defaultOpenKeys={[defaultOpenKeys]}
       selectedKeys={[selectedKeys]}
       mode="horizontal"
-      //className={getNavStyleSubMenuClass(navStyle)}
+      className={getNavStyleSubMenuClass(navStyle)}
 
     >
-      {/* <SubMenu
+      <SubMenu
         className={getNavStyleSubMenuClass(navStyle)}
         key="main"
         title={<IntlMessages id="sidebar.main" />}
-      > */}
+      >
         {menuList.map((data, index) => (
           <Menu.Item key={data.key} >
-            <Link to={data.linkTo} className={`${data.key==selectedKeys?'gx-text-secondary':'gx-text-white'} gx-text-uppercase`}>
-              {/* <i className={data.iconClass} /> */}
+            <Link to={data.linkTo} className={`${data.key===selectedKeys?'gx-text-secondary':'gx-text-white'} gx-text-uppercase`}>
+              <i className={data.iconClass} />
              <IntlMessages id={data.intlMessagesId} /> &nbsp; 
             </Link>
           </Menu.Item>
         ))}
-        {/* <Menu.Item key="sample">
+        <Menu.Item key="sample">
           <Link to="/sample">
             <i className="icon icon-widgets" />
             <IntlMessages id="sidebar.samplePage" />
           </Link>
-        </Menu.Item> */}
-      {/* </SubMenu> */}
+        </Menu.Item>
+      </SubMenu>
     </Menu>
   );
 };

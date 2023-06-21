@@ -47,22 +47,22 @@ export const menuList = [
     iconClass: "icon icon-feedback",
     intlMessagesId: "sidebar.diaryPage"
   },
-  // {
-  //   key: "appraisals",
-  //   linkTo: "/appraisals",
-  //   iconClass: "icon icon-feedback",
-  //   intlMessagesId: "sidebar.appraisalsPage"
-  // },
+  {
+    key: "appraisals",
+    linkTo: "/appraisals",
+    iconClass: "icon icon-feedback",
+    intlMessagesId: "sidebar.appraisalsPage"
+  },
   {
     key: "library",
     linkTo: "/library",
     iconClass: "icon icon-orders",
     intlMessagesId: "sidebar.eLibraryPage"
+  },
+  {
+    key: "videos",
+    linkTo: "/videos",
+    iconClass: "icon icon-data-display",
+    intlMessagesId: "sidebar.videosPage"
   }
-  // {
-  //   key: "videos",
-  //   linkTo: "/videos",
-  //   iconClass: "icon icon-data-display",
-  //   intlMessagesId: "sidebar.videosPage"
-  // }
 ];

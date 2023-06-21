@@ -1,20 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import NextApp from './NextApp';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import NextApp from "./NextApp";
+import * as serviceWorker from "./serviceWorker";
 import "react-hot-loader/patch";
-
 // Add this import:
-import {AppContainer} from 'react-hot-loader';
+import { AppContainer } from "react-hot-loader";
 
 // Wrap the rendering in a function:
-const render = Component => {
+const render = (Component) => {
   ReactDOM.render(
     // Wrap App inside AppContainer
+
     <AppContainer>
-      <NextApp/>
+      <NextApp />
     </AppContainer>,
-    document.getElementById('root')
+    document.getElementById("root")
+
   );
 };
 // If you want your app to work offline and load faster, you can change
@@ -27,7 +28,7 @@ render(NextApp);
 
 // Webpack Hot Module Replacement API
 if (module.hot) {
-  module.hot.accept('./NextApp', () => {
+  module.hot.accept("./NextApp", () => {
     render(NextApp);
   });
 }
