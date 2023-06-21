@@ -12,7 +12,7 @@ const Card2 = () => {
         <IntlMessages id="sidebar.cardstyle2" />
       </h2>
 
-      <div className="gx-d-flex justify-content-center">
+      {/* <div className="gx-d-flex justify-content-center"> */}
         {/* <h4>Happy Coding! From Ashhad 2</h4> */}
         {/* <Greetings/> */}
         <Row gutter={[8,8,8]}>
@@ -53,7 +53,7 @@ const Card2 = () => {
           ></Col>
           <CardsStyle2 />
         </Row>
-      </div>
+      {/* </div> */}
     </>
   );
 };
