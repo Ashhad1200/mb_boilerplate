@@ -10,7 +10,7 @@ const CardStructure = (props) => {
         title={userData.name}
         bordered={true}
         style={{
-          width: 350,
+          width: 300,
           marginBottom: 10,
           marginRight: 10,
         }}

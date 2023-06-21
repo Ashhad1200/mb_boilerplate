@@ -1,22 +1,21 @@
 import React from "react";
 import IntlMessages from "util/IntlMessages";
 // import Greetings from "components/dashboard/Greetings";
-import { Col, Row } from "antd";
-
 import CardsStyle2 from "./cardData";
+import { Col, Row } from "antd";
 
 const Card2 = () => {
   return (
-    <div>
+    <>
       <h2 className="title gx-mb-4">
         {/* <IntlMessages id="sidebar.samplePage" /> */}
-        <IntlMessages id="sidebar.aboutPage" />
+        <IntlMessages id="sidebar.cardstyle2" />
       </h2>
 
       <div className="gx-d-flex justify-content-center">
         {/* <h4>Happy Coding! From Ashhad 2</h4> */}
         {/* <Greetings/> */}
-        <Row gutter={[8, 8, 8]}>
+        <Row gutter={[8,8,8]}>
           <Col
             xl={16}
             lg={16}
@@ -55,7 +54,7 @@ const Card2 = () => {
           <CardsStyle2 />
         </Row>
       </div>
-    </div>
+    </>
   );
 };
 
