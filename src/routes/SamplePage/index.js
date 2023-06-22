@@ -10,7 +10,7 @@ const SamplePage = () => {
       </h2>
 
       <div className="gx-d-flex justify-content-center">
-        <h4>Happy Coding!</h4>
+        <h4>Happy Coding! ope you enjoy it  </h4>
       </div>
     </div>
   );
