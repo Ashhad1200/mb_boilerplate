@@ -16,37 +16,37 @@ const CardStructure = (props) => {
       <Card title={userData.name} style={Style}>
         <Card.Grid>
           <li>
-            <b>COMPANY</b>: {userData.company.name}
+            <b>COMPANY </b>: {userData.company.name}
           </li>
         </Card.Grid>
         <Card.Grid>
           <li>
-            <b>NAME</b>: {userData.name}
+            <b>NAME </b>: {userData.name}
           </li>
         </Card.Grid>
         <Card.Grid>
           <li>
-            <b>USERNAME</b>: {userData.username}
+            <b>USERNAME </b>: {userData.username}
           </li>
         </Card.Grid>
         <Card.Grid>
           <li>
-            <b>EMAIL</b>: {userData.email}
+            <b>EMAIL </b>: {userData.email}
           </li>
         </Card.Grid>
         <Card.Grid>
           <li>
-            <b>PHONE</b>: {userData.phone}
+            <b>PHONE </b>: {userData.phone}
           </li>
         </Card.Grid>
         <Card.Grid>
           <li>
-            <b>WEBSITE</b>: {userData.website}
+            <b>WEBSITE </b>: {userData.website}
           </li>
         </Card.Grid>
         <Card.Grid>
           <li>
-            <b>ADDRESS/CITY</b>: {userData.address.city}
+            <b>ADDRESS/CITY </b>: {userData.address.city}
           </li>
         </Card.Grid>
         <Card.Grid>
@@ -56,7 +56,7 @@ const CardStructure = (props) => {
         </Card.Grid>
         <Card.Grid>
           <li>
-            <b>ZIPCODE</b>: {userData.address.zipcode}
+            <b>ZIPCODE </b>: {userData.address.zipcode}
           </li>
         </Card.Grid>
       </Card>
