@@ -4,9 +4,9 @@ import ContentLoader from 'react-content-loader'
 const Medium = () => (
   <ContentLoader
     height={475}
-    width={660}
-    speed={2}
-    primaryColor="#f3f3f3"
+    width={960}
+    speed={5}
+    primaryColor="#17202A"
     secondaryColor="#ecebeb"
   >
     <circle cx="25" cy="112" r="15" />
@@ -17,7 +17,7 @@ const Medium = () => (
     <rect x="50" y="98" rx="0" ry="0" width="115" height="9" />
     <rect x="50" y="115" rx="0" ry="0" width="115" height="10" />
   </ContentLoader>
-)
+);
 
 // Medium.metadata = {
 //   name: 'DaniloWoz',
@@ -26,4 +26,4 @@ const Medium = () => (
 //   filename: 'Medium',
 // }
 
-export default Medium
+export default Medium;

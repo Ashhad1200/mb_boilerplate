@@ -1,35 +1,7 @@
-// import React, { useState, useEffect } from "react";
-// import { Card } from "antd";
-// import userService from "../../appServices/userService.js";
-// // import axios from "axios";
 import CardStructure from "./cardStructure.js";
-// const CardsStyle2 = async () => {
-//   const [user, setUser] = useState(null);
-//   const data = await userService.getUser();
-//   // useEffect(() => {
-//     if (user.length < 1) {
-//       setUser(data);
-//     }
-//   // });
-//   if (user == null || user.length < 1) {
-//     return (
-//       <div>
-//         <h1>Loading....</h1>
-//       </div>
-//     );
-//   }
-//   // return user.map((user) => <CardStructure user={user} />);
-//   return(
-//     <>
-
-//     </>
-//   );
-// };
-// export default CardsStyle2;
-
 import React, { useState, useEffect } from "react";
 import userService from "../../appServices/userService.js";
-
+import Medium from "../../components/dashboard/greetings.loader.js";
 const CardsStyle2 = () => {
   const [user, setUser] = useState([]);
 
@@ -40,12 +12,13 @@ const CardsStyle2 = () => {
     };
 
     fetchData();
-  }, []);
+  });
 
   if (user === null || user.length < 1) {
     return (
       <div>
-        <h1>Loading....</h1>
+        {/* <h1>Loading....</h1> */}
+        <Medium/>
       </div>
     );
   }
@@ -56,8 +29,7 @@ const CardsStyle2 = () => {
       {user.map((userData) => (
         // <li key={userData.id}>{userData.name}</li>
 
-        <CardStructure key={userData.id} userData = {userData} />
-
+        <CardStructure key={userData.id} userData={userData} />
       ))}
       {/* // </ul> */}
     </div>
