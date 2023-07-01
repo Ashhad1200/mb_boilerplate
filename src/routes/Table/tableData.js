@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import userService from "../../appServices/userService.js";
+// import { Layout, Typography } from "antd";
+
 import Medium from "../../components/dashboard/greetings.loader.js";
 // import TableStructure from "./tableStructure.js";
-import { Table } from "antd";
+// eslint-disable-next-line no-unused-vars
+import { Space, Table } from "antd";
 
 const TableData = () => {
   const [user, setUser] = useState([]);

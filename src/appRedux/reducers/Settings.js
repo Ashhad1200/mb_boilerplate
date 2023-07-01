@@ -6,13 +6,14 @@ import {
   NAV_STYLE_FIXED,
   THEME_COLOR,
   THEME_TYPE,
-  THEME_TYPE_SEMI_DARK
+  // THEME_TYPE_SEMI_DARK,
+  THEME_TYPE_DARK
 } from "../../constants/ThemeSetting";
 
 const initialSettings = {
   navStyle: NAV_STYLE_FIXED,
   layoutType: LAYOUT_TYPE_FULL,
-  themeType: THEME_TYPE_SEMI_DARK,
+  themeType: THEME_TYPE_DARK,
   themeColor: THEME_COLOR,
 
   isDirectionRTL: false,

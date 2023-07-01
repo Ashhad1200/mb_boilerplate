@@ -1,8 +1,11 @@
 import React from "react";
 import IntlMessages from "util/IntlMessages";
 import CardData from "./cardData";
-import { Col, Row } from "antd";
+// import { Col, Row } from "antd";
+import { Layout, Typography, Row, Col } from "antd";
 
+const { Header, Content, Footer } = Layout;
+const { Title, Paragraph } = Typography;
 const Card1 = () => {
   return (
     <>
@@ -10,44 +13,15 @@ const Card1 = () => {
         {/* <IntlMessages id="sidebar.samplePage" /> */}
         <IntlMessages id="sidebar.cardStyle1" />
       </h2>
-      <Row gutter={[8, 8, 8]}>
-        <Col
-          xl={16}
-          lg={16}
-          md={16}
-          sm={{ span: 24, order: 1 }}
-          xs={{ span: 24, order: 1 }}
-        ></Col>
-        <Col
-          xl={8}
-          lg={8}
-          md={8}
-          sm={{ span: 24, order: 3 }}
-          xs={{ span: 24, order: 2 }}
-        ></Col>
-        <Col
-          lg={16}
-          md={16}
-          sm={{ span: 24, order: 3 }}
-          xs={{ span: 24, order: 2 }}
-        ></Col>
-
-        <Col
-          xl={8}
-          lg={8}
-          md={8}
-          sm={{ span: 24, order: 3 }}
-          xs={{ span: 24, order: 3 }}
-        ></Col>
-        <Col
-          xl={24}
-          lg={24}
-          md={24}
-          sm={{ span: 24, order: 3 }}
-          xs={{ span: 24, order: 4 }}
-        ></Col>
-        <CardData />
+        <Layout>
+          <Content style={{ padding: "0 50px" }}>
+            <div style={{ background: "#0D2147", padding: 24, minHeight: 280 ,alignItems:"center",paddingLeft:130 }}>
+      <Row gutter={[16,16]}>
+            <CardData />
       </Row>
+            </div>
+          </Content>
+        </Layout>
     </>
   );
 };

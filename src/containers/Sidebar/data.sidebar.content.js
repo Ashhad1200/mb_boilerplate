@@ -55,7 +55,7 @@ export const menuList = [
   {
     key: "/table",
     linkTo: "/table",
-    iconClass: "icon icon-tab",
+    iconClass: "icon icon-tasks",
     intlMessagesId: "sidebar.dataTable",
     claimKey: "AllowedItem",
   },

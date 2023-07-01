@@ -1,11 +1,10 @@
 import React from "react";
-import { Col, Row } from "antd";
-import Greetings from "components/dashboard/Greetings";
+import WelcomePage from './welcomePageStructure';
 
 const HomePage = () => {
   return (
     <>
-      <Row gutter={[16, 16]}>
+      {/* <Row gutter={[16, 16]}>
         <Col
           xl={16}
           lg={16}
@@ -43,7 +42,9 @@ const HomePage = () => {
           sm={{ span: 24, order: 3 }}
           xs={{ span: 24, order: 4 }}
         ></Col>
-      </Row>
+      </Row> */}
+      <WelcomePage />
+
     </>
   );
 };
