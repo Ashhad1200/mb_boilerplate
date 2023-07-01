@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import SimpleLoader from "../../components/SimpleLoader";
 // import StudentCard from "./studentCard";
 import CardStructure from "./CardStructure";
 const CardData = () => {
@@ -17,9 +18,7 @@ const CardData = () => {
     });
     if (user == null || user.length < 1) {
       return (
-        <div>
-          <h1>Loading....</h1>
-        </div>
+        <SimpleLoader/>
       );
     }
     return(

@@ -8,7 +8,7 @@ const Card1 = () => {
     <>
       <h2 className="title gx-mb-4">
         {/* <IntlMessages id="sidebar.samplePage" /> */}
-        <IntlMessages id="sidebar.cardstyle1" />
+        <IntlMessages id="sidebar.cardStyle1" />
       </h2>
       <Row gutter={[8, 8, 8]}>
         <Col

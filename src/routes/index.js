@@ -28,10 +28,10 @@ const App = ({ match }) => (
           path={`${match.url}card2`}
           component={asyncComponent(() => import("./CardStyle2"))}
         />
-        {/* <Route
-        path={`${match.url}ChangePassword`}
-        component={asyncComponent(() => import("./auth/ChangePassword"))}
-      /> */}
+        <Route
+        path={`${match.url}table`}
+        component={asyncComponent(() => import("./Table"))}
+      />
 
         <Route component={NotFoundRedirect} />
       </Switch>

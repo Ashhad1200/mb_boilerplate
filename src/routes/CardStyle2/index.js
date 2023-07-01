@@ -9,7 +9,7 @@ const Card2 = () => {
     <>
       <h2 className="title gx-mb-4">
         {/* <IntlMessages id="sidebar.samplePage" /> */}
-        <IntlMessages id="sidebar.cardstyle2" />
+        <IntlMessages id="sidebar.cardStyle2" />
       </h2>
 
       {/* <div className="gx-d-flex justify-content-center"> */}
