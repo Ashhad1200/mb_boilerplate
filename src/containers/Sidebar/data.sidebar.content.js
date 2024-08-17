@@ -59,6 +59,13 @@ export const menuList = [
     intlMessagesId: "sidebar.dataTable",
     claimKey: "AllowedItem",
   },
+  {
+    key: "/ApiWork",
+    linkTo: "/ApiWork",
+    iconClass: "icon icon-tasks",
+    intlMessagesId: "sidebar.apiwork",
+    claimKey: "AllowedItem",
+  },
   // {
   //   key: "academics",
   //   hasSubMenus: true,
